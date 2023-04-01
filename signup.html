@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp Page</title>
+</head>
+
+<body>
+    <!-- Here, we create a signup form with all the necessary informations/data  -->
+    <div class="registration form">
+        <div class="container">
+            <header>Signup</header>
+        <form id="signupForm" class="form" action="#">
+            <input type="email" placeholder="Email" id="signupEmail">
+            <input type="password" placeholder="Password" id="signupPassword">
+            <input type="password" placeholder="Confirm Password" id="signupConfirmPassword">
+
+            <!-- Onclick event we are calling register() function from Script.js file -->
+            <input type="button" class="button" value="Signup" onclick="register()"> 
+        </form>
+        <!-- If you already have an account then click on 'Click Here' and you will be re-directed to the login page -->
+        <div class="signup">
+            <span class="signup">Already have an account?
+                <a href="login.html">Click Here</a>
+            </span>
+        </div>
+        </div>
+
+        <!-- Here, all the JavaScript files are imported from the firebase console  -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+
+        <!-- this is JavaScript file which I have written for validation and connecting form with the firebase Database -->
+        <script src="script.js"></script>
+        </div>
+</body>
+
+</html>

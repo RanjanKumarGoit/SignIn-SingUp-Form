@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sapient Assignment</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- // Navigation Bar -->
+  <nav>
+    <ul>
+    
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="education.html">Education</a></li>
+    </ul>
+  </nav>
+
+<!-- this is header text -->
+<header class="header">Sapient Assignment</header>
+
+  <!-- Here, all the necessary inputs and buttons are created for login page. -->
+  <div class="container">
+    <div class="login form">
+      <header>Login</header>
+      <form id="loginForm" action="#">
+        <input type="email" placeholder="Email" id="loginEmail" required>
+        <input type="password" placeholder="Password" id="loginPassword" required>
+        <a href="#">Forgot password?</a>
+        <input type="button" class="button" value="Login" onclick="login()">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+          <a href="signup.html">Click Here</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<!-- Firebase JavaScript files are imported here from the firebase console -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="script.js"></script>
+
+</html>
